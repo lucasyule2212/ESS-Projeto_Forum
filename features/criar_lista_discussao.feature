@@ -30,10 +30,13 @@ Feature: Auto-Avaliação
     Then Posso ver a página inicial do fórum.
     When Clico em "Iniciar nova discussão".
     Then Posso criar uma nova discussão.
-    Then Crio o título e corpo da discussão.
+    Then Crio o título da discussão.
     And Posso categorizar e customizar a discussão.
     When Termino de configurar e categorizar.
     And Clico em "Lançar nova discussão".
     Then Recebo uma mensagem que o campo Corpo da discussão está em branco.
+
+    
+
 
 
