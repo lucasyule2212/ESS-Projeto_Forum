@@ -54,3 +54,6 @@ Scenario: Login de um usuario com senha inválida
   And Eu sou um usuario comum cadastrado no sistema com username "user_test" com senha "123"
   When Eu preencho os campos username com "user_test" e com senha "124"
   Then Uma mensagem de falha de login é exibida
+
+Scenario: teste
+  teste
