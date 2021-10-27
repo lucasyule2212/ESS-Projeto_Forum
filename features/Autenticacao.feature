@@ -55,3 +55,9 @@ Scenario: Login de um usuario com senha inválida
   When Eu preencho os campos username com "user_test" e com senha "124"
   Then Uma mensagem de falha de login é exibida
   And Permaneço na mesma página de Login
+
+Scenario: Cadastro de novo usuario com dado faltante
+  Given Eu estou na página de cadastro de usuários
+  When Eu cadastro o usuário "user_test" com a senha faltando
+  Then A mensagem indicando falha no cadastro é exibida
+
