@@ -62,3 +62,5 @@ Scenario: Cadastro de novo usuario com dado faltante
   When Eu cadastro o usuário "user_test" com a senha faltando
   Then A mensagem indicando falha no cadastro é mostrado
 
+Scenario: teste de commit
+
