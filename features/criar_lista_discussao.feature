@@ -45,6 +45,10 @@ Feature: Auto-Avaliação
     And Posso categorizar e customizar a discussão.
     When Termino de configurar e categorizar.
     And Clico em "Lançar nova discussão".
-    Then Recebo uma mensagem que o campo Corpo da discussão excedeu o limite de caracteres.
+    Then Recebo um popup que o campo Corpo da discussão excedeu o limite de caracteres.
+    Then Retiro algumas linhas.
+    And Clico em "Lançar nova discussão".
+    Then Recebo uma mensagem que a discussão foi criada com sucesso.
+    Then A nova discussão já pode ser vista por todos os usuários do fórum.
 
 
