@@ -1,0 +1,27 @@
+<header class="header-cadastro">
+  <h1>Cadastro de usuário</h1>
+</header>
+
+<main class="main-cadastro">
+  <form class="form-cadastro" (ngSubmit)="submit()">
+    <div class="div-input">
+      <label for="username">Nome de usuário:</label>
+      <input name="username" type="text" placeholder="usuário" formControlName="usuario">
+    </div>
+    <div class="div-input">
+      <label for="email">E-mail:</label>
+      <input name="email" type="email" placeholder="E-mail" formControlName="email">
+    </div>
+    <div class="div-input">
+      <label for="senha">Senha:</label>
+      <input name="senha" type="password" placeholder="senha" formControlName="senha">
+    </div>
+    <div class="div-input">
+      <button type="submit" (click)='submit()'>Cadastrar</button>
+    </div>
+  </form>
+
+  <div class="div-footer">
+    <a id="link-footer" routerLink="/loginpage">Já possui um usuário? Faça login!</a>
+  </div>
+</main>

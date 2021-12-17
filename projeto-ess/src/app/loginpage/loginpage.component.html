@@ -1,0 +1,25 @@
+<h1>Login</h1>
+
+
+<main class="main-login"> 
+
+    <div>
+        <input [(ngModel)]="Usuario.nome"  type="text" >
+        <label>Usuário</label>
+    </div>
+
+    <div>
+        <input [(ngModel)]="Usuario.senha" type="password">
+        <label>Senha</label>
+    </div>
+
+    <div>
+        <button (click)="login()">Login</button> 
+        
+    </div>
+
+    <div>
+        <a routerLink="/cadastro">Não possui cadastro ? cadastre-se!</a>
+    </div>
+
+</main>
